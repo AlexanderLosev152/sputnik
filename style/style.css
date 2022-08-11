@@ -386,9 +386,6 @@ body {
   padding-left: 10px;
 }
 
-.form__mail placeholder {
-  
-}
 .form__button {
   padding: 10px 64px;
   margin-left: 36px;
@@ -426,8 +423,6 @@ body {
 
 .accordion__item-input:checked ~ .accordion__item-trigger {
   color: var(--color-hover);
-  transform: rotate(50%);
-  
 }
 
 .accordion__item-input:checked ~ .accordion__item-content {
