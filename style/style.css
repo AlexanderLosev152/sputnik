@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* переменные */
 :root{
 --color-hover: #C41429;
@@ -195,9 +199,6 @@ body {
 
 .backpacks {
   background-color: #F4F4F4;
-}
-
-.backpacks__items-img {
 }
 
 .backpacks__items-title {
@@ -618,16 +619,9 @@ body {
     align-items: center;
   }
 
-  .slider__item img {
-
-  }
-  
   .shopping__items {
     display: flex;
     align-items: center;
-  }
-
-  .slick-slide img {
   }
 
   .slick-dots li button {
