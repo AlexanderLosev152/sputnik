@@ -40,6 +40,16 @@ body {
 .logo {
   margin-right: 72px;
 }
+
+.logo path {
+  transition: fill .3s ease;
+  /* для плавности анимации */
+}
+
+.logo:hover path {
+  fill: #C41429;
+}
+
 .navbar {
   display: flex;
   text-align: center;
@@ -64,6 +74,7 @@ body {
   color: #222;
   text-decoration: none;
   margin-right: 18px;
+  transition: .3s ease;
 }
 
 .navbar__link:hover {
@@ -75,8 +86,12 @@ body {
 .header__tel {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
+.header__tel svg:hover path {
+  fill: #C41429;
+}
 .phone {
   display: flex;
   align-items: center;
@@ -91,6 +106,7 @@ body {
   line-height: 23px;
   color: #000000;
   text-decoration: none;
+  transition: .3s ease;
 }
 
 .phone__link:hover {
@@ -103,12 +119,6 @@ body {
 
 
 /* slider */
-
-.slider {
-}
-
-.slider__items {
-}
 
 .slider__item {
   display: flex;
@@ -145,7 +155,12 @@ body {
   padding: 15px 63px;
   border: 2px solid #000;
   color: #000;
+  transition: .3s ease;
+}
 
+.slider__item-btn:hover {
+  color: #C41429;
+  border: 3px solid #C41429;
 }
 
 .slick-dots {
@@ -178,6 +193,9 @@ body {
   height: 20px;
 }
 
+.dots {
+  background-color: #C41429;
+}
 
 /* backpacks */
 
@@ -201,9 +219,16 @@ body {
 
 .backpacks__item {
   position: relative;
+  cursor: pointer;
+  display: block;
+  overflow: inherit;
 }
 
-
+.backpacks__item:hover .backpacks__items-title{
+  cursor: pointer;
+  color: #C41429;
+  transition: .3s ease;
+}
 .backpacks__arrow {
   width: 360px;
   height: 261px;
@@ -218,8 +243,9 @@ body {
 .backpacks__arrow-link {
   position: absolute;
   display: flex;
-  bottom: 34px;
-  right: 26px;
+  align-items: flex-end;
+  bottom: 0px;
+  right: 0px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -229,6 +255,22 @@ body {
   height: 35px;
 }
 
+.backpacks__arrow-df {
+  position: absolute;
+  bottom: 38px;
+  right: 26px;
+  display: flex;
+  align-items: center;
+}
+.backpacks__arrow:hover .backpacks__arrow-link{
+  color: #C41429;
+  
+}
+
+.backpacks__arrow-link-svg:hover line {
+  stroke: #C41429;
+  transition: .3s ease;
+}
 .backpacks__items {
   display: grid;
   grid-template-columns: repeat(4, 263px);
@@ -360,7 +402,6 @@ body {
 
 .subscription {
   background-color: var(--color-hover);
-
   text-align: center;
 }
 
@@ -396,8 +437,14 @@ body {
   background: var(--color-hover);
   color: #fff;
   border: 1px solid #fff;
+  transition: .3s ease;
 }
 
+.form__button:hover {
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+}
 
 
 /* accoredeon */
@@ -439,6 +486,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  cursor: pointer;
 
 }
 
@@ -480,6 +528,7 @@ body {
 .map__title span {
   color: var(--color-hover);
   border-bottom: 2px solid var(--color-hover);
+  cursor: pointer;
 }
 
 .map__items {
@@ -518,7 +567,12 @@ body {
   padding-left: 20px;
 }
 
-.social__link {
+.social__link:hover path {
+  fill-opacity: 0.5;
+}
+
+.social__link:hover path  {
+  fill-opacity: 0.5;
 }
 
 .footer__end {
@@ -530,3 +584,135 @@ body {
   border-top: 1px solid rgb(196, 196, 196);
   padding-top: 20px;
 }
+
+
+
+
+/* медиазапросы */
+
+@media (max-width: 1120px) {
+
+
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__item {
+    display: none;
+  }
+
+
+  .slider__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+  }  
+
+  .slider__item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider__item img {
+
+  }
+  
+  .shopping__items {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-slide img {
+  }
+
+  .slick-dots li button {
+    margin-top: 30px;
+  }
+
+  .backpacks__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .backpacks__arrow {
+    left: 0;
+  }
+
+  .video__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logistics__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shopping__title {
+    text-align: center;
+  }
+
+  .shopping__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__mail {
+    margin-bottom: 30px;
+  }
+
+  .form__button {
+    margin-left: 0;
+  }
+
+  .accordion__title {
+    text-align: center;
+  }
+
+  .instagram__items-title {
+    text-align: center;
+  }
+
+  .instagram__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .map__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .footer__top {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
+
