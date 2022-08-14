@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 /* переменные */
 :root{
 --color-hover: #C41429;
