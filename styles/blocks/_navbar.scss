@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  gap: 35px;
+
+  /* .navbar__link */
+
+  &__link {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--color-accent);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  &__tel {
+    margin-left: auto;
+    // margin-left: 187px;
+  }
+
+  &__basket {
+    margin-left: 20px;
+  }
+}
+
+.logo {
+  margin-right: 72px;
+}

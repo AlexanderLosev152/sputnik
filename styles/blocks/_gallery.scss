@@ -1,0 +1,31 @@
+.gallery {
+  background-color: var(--color-gallery);
+
+  /* .gallery__wrapper */
+
+  &__wrapper {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 263px);
+    grid-template-rows: 263px 263px;
+    gap: 30px 30px;
+    a:nth-child(5) {
+      grid-column: 2 / 3;
+      max-width: 457px;
+    }
+  }
+
+  /* .gallery__link */
+
+  &__link {
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    grid-column: 4/6;
+
+    a {
+      position: absolute;
+      font-size: 22px;
+    }
+  }
+}
