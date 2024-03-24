@@ -10,7 +10,7 @@
     grid-template-rows: 263px 263px;
     gap: 30px 30px;
     a:nth-child(5) {
-      grid-column: 2 / 3;
+      grid-column: 2 / 4;
       max-width: 457px;
     }
   }
@@ -22,10 +22,19 @@
     background: #fff;
     position: relative;
     grid-column: 4/6;
+    width: 360px;
+    right: 100px;
 
-    a {
+    span {
       position: absolute;
+      right: 84px;
+      bottom: 34px;
       font-size: 22px;
+    }
+    img {
+      position: absolute;
+      right: 30px;
+      bottom: 42px;
     }
   }
 }

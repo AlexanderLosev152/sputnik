@@ -1,0 +1,11 @@
+.video {
+  z-index: 0;
+  /* .vidio__play */
+
+  &__play {
+    z-index: 999;
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+  }
+}
