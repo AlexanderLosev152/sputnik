@@ -1,0 +1,27 @@
+.logistic {
+  background-color: #f4f4f4;
+  /* .logistic__wrapper */
+
+  &__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  /* .logistic__box */
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* .logistic__info */
+
+  &__info {
+    text-align: center;
+  }
+}

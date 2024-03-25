@@ -1,0 +1,46 @@
+.buy {
+  /* .buy__subscribe */
+
+  &__subscribe {
+    background-color: var(--color-accent);
+
+    margin-bottom: 80px;
+  }
+
+  /* .buy__subscribe--wrapper */
+
+  &__subscribe-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    color: #fff;
+  }
+
+  /* .buy__subscribe-title */
+
+  &__subscribe-title {
+    padding-bottom: 15px;
+  }
+
+  p {
+    padding-bottom: 42px;
+  }
+
+  /* .buy__subscribe-btn */
+
+  &__subscribe-btn {
+    input {
+      width: 292px;
+      height: 54px;
+
+      padding: 10px;
+      outline: none;
+
+      margin-right: 18px;
+    }
+  }
+}

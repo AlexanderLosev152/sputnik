@@ -19,10 +19,16 @@ html {
   scroll-behavior: smooth;
 }
 
+html:hover::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
 body {
   font-family: var(--font-family);
   font-weight: var(--font-weight);
   line-height: var(--line-height);
+  color: var(--text-color);
+  // opacity: 0.9;
 }
 
 a,
@@ -65,4 +71,7 @@ h2 {
 
 h3 {
   font-size: var(--h3-size);
+}
+h4 {
+  font-size: var(--h4-size);
 }

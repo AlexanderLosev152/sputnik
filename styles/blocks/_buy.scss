@@ -1,0 +1,45 @@
+.buy {
+  /* .buy__title */
+
+  &__title {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  /* .buy__wrapper */
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 105px;
+  }
+
+  /* .buy__card */
+
+  &__card {
+    img {
+      padding-bottom: 15px;
+    }
+    > span {
+      font-size: 18px;
+    }
+  }
+
+  /* .buy__price */
+
+  &__price {
+    padding-top: 18px;
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &--old {
+      font-size: 14px;
+      text-decoration: line-through;
+      color: #999;
+    }
+  }
+}

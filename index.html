@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Спутник</title>
+    <link rel="shortcut icon" href="images/basket.svg" type="image/x-icon" />
+    <title>SPUTNIK</title>
   </head>
   <body>
     <div class="wrapper">
@@ -19,10 +20,14 @@
             </a>
             <nav>
               <ul class="navbar">
-                <li><a class="navbar__link" href="#">Каталог</a></li>
-                <li><a class="navbar__link" href="#">Бренд</a></li>
-                <li><a class="navbar__link" href="#">Доставка и оплата</a></li>
-                <li><a class="navbar__link" href="#">Где купить Sputnik</a></li>
+                <li><a class="navbar__link" href="#catalog">Каталог</a></li>
+                <li><a class="navbar__link" href="#brend">Бренд</a></li>
+                <li>
+                  <a class="navbar__link" href="#delivery">Доставка и оплата</a>
+                </li>
+                <li>
+                  <a class="navbar__link" href="#buy">Где купить Sputnik</a>
+                </li>
               </ul>
             </nav>
             <div class="header__tel">
@@ -74,45 +79,40 @@
           </div>
         </section>
 
-        <section class="gallery">
+        <section class="catalog" id="catalog">
           <div class="container">
-            <div class="gallery__wrapper">
-              <a data-fancybox="gallery" href="images/gallery/bg1.jpg">
-                <img
-                  src="images/gallery/bg1.jpg"
-                  alt="gallery"
-                  loading="lazy"
-                />
-              </a>
-              <a data-fancybox="gallery" href="images/gallery/bg2.jpg">
-                <img
-                  src="images/gallery/bg2.jpg"
-                  alt="gallery"
-                  loading="lazy"
-                />
-              </a>
-              <a data-fancybox="gallery" href="images/gallery/bg3.jpg">
-                <img
-                  src="images/gallery/bg3.jpg"
-                  alt="gallery"
-                  loading="lazy"
-                />
-              </a>
-              <a data-fancybox="gallery" href="images/gallery/bg4.jpg">
-                <img
-                  src="images/gallery/bg4.jpg"
-                  alt="gallery"
-                  loading="lazy"
-                />
-              </a>
-              <a data-fancybox="gallery" href="images/gallery/bg5.jpg">
-                <img
-                  src="images/gallery/bg5.jpg"
-                  alt="gallery"
-                  loading="lazy"
-                />
-              </a>
-              <a class="gallery__link" href="#">
+            <div class="catalog__wrapper">
+              <div
+                class="catalog__img"
+                style="background-image: url(/images/gallery/bg1.jpg)"
+              >
+                <span class="catalog__title">Тоут</span>
+              </div>
+              <div
+                class="catalog__img"
+                style="background-image: url(/images/gallery/bg2.jpg)"
+              >
+                <span class="catalog__title">Рюкзаки</span>
+              </div>
+              <div
+                class="catalog__img"
+                style="background-image: url(/images/gallery/bg3.jpg)"
+              >
+                <span class="catalog__title">Поясные</span>
+              </div>
+              <div
+                class="catalog__img"
+                style="background-image: url(/images/gallery/bg4.jpg)"
+              >
+                <span class="catalog__title">Роллтоп</span>
+              </div>
+              <div
+                class="catalog__img"
+                style="background-image: url(/images/gallery/bg5.jpg)"
+              >
+                <span class="catalog__title">Кросс-боди</span>
+              </div>
+              <a class="catalog__link" href="#">
                 <span
                   >Смотреть<br />
                   всю коллекцию</span
@@ -127,7 +127,7 @@
           </div>
         </section>
 
-        <section class="video">
+        <section class="video" id="brend">
           <div class="container">
             <div class="video__wrapper">
               <div
@@ -143,11 +143,11 @@
               <div class="video__text">
                 <h3>Кто мы</h3>
                 <p>
-                  SPUTNIK — универсальные и сдержанные вещи, которые дополняют,
-                  а не перебивают. Они не выходят на первый план; их задача —
-                  раскрыть образ своего владельца. Ведь основное для нас —
-                  личность человека и вещи, которыми он наполняет наши рюкзаки и
-                  сумки.
+                  <strong>SPUTNIK</strong> — универсальные и сдержанные вещи,
+                  которые дополняют, а не перебивают. Они не выходят на первый
+                  план; их задача — раскрыть образ своего владельца. Ведь
+                  основное для нас — личность человека и вещи, которыми он
+                  наполняет наши рюкзаки и сумки.
                 </p>
                 <p>
                   В течение 5 лет мы разрабатываем новые модели и сотрудничаем с
@@ -158,25 +158,197 @@
           </div>
         </section>
 
-        <section class="logistic">
-          <div class="containner">
+        <section class="logistic" id="delivery">
+          <div class="container">
             <div class="logistic__wrapper">
-              <div class="logistic__wrapper--box">
-                <img src="" alt="img" loading="lazy" />
-                <p>
-                  Заказы по России отправляем на следующий день после оплаты
-                </p>
+              <div class="logistic__box">
+                <img
+                  class="logistic__img"
+                  src="images/logistic/truck.svg"
+                  alt="img"
+                  loading="lazy"
+                />
+                <div class="logistic__info">
+                  <p>
+                    Заказы по России отправляем <br />
+                    на следующий день после оплаты
+                  </p>
+                </div>
               </div>
 
-              <div class="logistic__wrapper--box">
-                <img src="" alt="img" loading="lazy" />
-                <p>Оплатить заказ вы можете любой картой на сайте</p>
+              <div class="logistic__box">
+                <img
+                  class="logistic__img"
+                  src="images/logistic/card.svg"
+                  alt="img"
+                  loading="lazy"
+                />
+                <div class="logistic__info">
+                  <p>
+                    Оплатить заказ вы можете<br />
+                    любой картой на сайте
+                  </p>
+                </div>
               </div>
 
-              <div class="logistic__wrapper--box">
-                <img src="" alt="img" loading="lazy" />
-                <p>Возврат или обмен в течение 30 дней</p>
+              <div class="logistic__box">
+                <img
+                  class="logistic__img"
+                  src="images/logistic/time.svg"
+                  alt="img"
+                  loading="lazy"
+                />
+                <div class="logistic__info">
+                  <p>
+                    Возврат или обмен<br />
+                    в течение 30 дней
+                  </p>
+                </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="buy">
+          <div class="container">
+            <h3 class="buy__title">Недавно купили</h3>
+            <div class="buy__wrapper">
+              <div class="buy__card">
+                <img src="images/buy/img1.jpg" alt="gallery" loading="lazy" />
+
+                <span>Кросс-боди VERA</span>
+
+                <div class="buy__price">
+                  <span><strong>3 260 ₽</strong></span>
+                </div>
+              </div>
+
+              <div class="buy__card">
+                <img src="images/buy/img2.jpg" alt="gallery" loading="lazy" />
+
+                <span>Тоут MARCEL</span>
+
+                <div class="buy__price">
+                  <span><strong>12 650 ₽</strong></span>
+                  <span class="buy__price--old">14 190 ₽</span>
+                </div>
+              </div>
+
+              <div class="buy__card">
+                <img src="images/buy/img3.jpg" alt="gallery" loading="lazy" />
+
+                <p>Рюкзак М1</p>
+
+                <div class="buy__price">
+                  <span><strong>4 650 ₽</strong></span>
+                </div>
+              </div>
+
+              <div class="buy__card">
+                <img src="images/buy/img4.jpg" alt="gallery" loading="lazy" />
+
+                <span>Поясная сумка INGE</span>
+
+                <div class="buy__price">
+                  <span><strong>2 990 ₽</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="buy__subscribe">
+            <div class="container">
+              <div class="buy__subscribe-wrapper">
+                <h3 class="buy__subscribe-title">Подпишись!</h3>
+
+                <p>Информация о жизни бренда и новых коллекциях.</p>
+
+                <div class="buy__subscribe-btn">
+                  <input type="text" placeholder="Ваш e-mail" />
+
+                  <button class="btn btn--subscribe" type="submit">
+                    Отправить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <h3>Вопрос-ответ</h3>
+
+            <div class="spoiler__wrapper one">
+              <div class="spoiler__box">
+                <div class="spoiler__box-title">
+                  <span>Дизайн точно уникальный? Кто придумывает?</span>
+                  <img src="images/open_spoiler.png" alt="img" loading="lazy" />
+                </div>
+                <div class="spoiler__box-text">
+                  Мы предоставляем гарантию в 1 год с момента покупки. Если в
+                  течение этого срока вы обнаружили дефект изделия, напишите
+                  нам, и мы обязательно найдём решение. Обратите внимание, что
+                  гарантия не будет действовать, если дефект или неисправность
+                  вызваны неаккуратным использованием или несоблюдением правил
+                  по уходу.
+                </div>
+              </div>
+
+              <div class="spoiler__box">
+                <div class="spoiler__box-title">
+                  <span>Как ухаживать за сумками?</span>
+                  <img src="images/open_spoiler.png" alt="img" loading="lazy" />
+                </div>
+                <div class="spoiler__box-text">
+                  Мы предоставляем гарантию в 1 год с момента покупки. Если в
+                  течение этого срока вы обнаружили дефект изделия, напишите
+                  нам, и мы обязательно найдём решение. Обратите внимание, что
+                  гарантия не будет действовать, если дефект или неисправность
+                  вызваны неаккуратным использованием или несоблюдением правил
+                  по уходу.
+                </div>
+              </div>
+
+              <div class="spoiler__box">
+                <div class="spoiler__box-title">
+                  <span>Я могу вернуть заказ, если он просто не подойдёт?</span>
+                  <img src="images/open_spoiler.png" alt="img" loading="lazy" />
+                </div>
+                <div class="spoiler__box-text">
+                  Мы предоставляем гарантию в 1 год с момента покупки. Если в
+                  течение этого срока вы обнаружили дефект изделия, напишите
+                  нам, и мы обязательно найдём решение. Обратите внимание, что
+                  гарантия не будет действовать, если дефект или неисправность
+                  вызваны неаккуратным использованием или несоблюдением правил
+                  по уходу.
+                </div>
+              </div>
+
+              <div class="spoiler__box">
+                <div class="spoiler__box-title">
+                  <span>Вы работаете с корпоративными клиентами?</span>
+                  <img src="images/open_spoiler.png" alt="img" loading="lazy" />
+                </div>
+                <div class="spoiler__box-text">
+                  Мы предоставляем гарантию в 1 год с момента покупки. Если в
+                  течение этого срока вы обнаружили дефект изделия, напишите
+                  нам, и мы обязательно найдём решение. Обратите внимание, что
+                  гарантия не будет действовать, если дефект или неисправность
+                  вызваны неаккуратным использованием или несоблюдением правил
+                  по уходу.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <h3>Наш Instagram</h3>
+            <div class="gallery__box">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
             </div>
           </div>
         </section>
