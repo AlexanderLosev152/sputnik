@@ -1,0 +1,36 @@
+.map {
+  margin-bottom: 30px;
+
+  /* .map__title */
+
+  &__title {
+    padding-bottom: 42px;
+    span {
+      color: var(--color-accent);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 11px;
+    }
+  }
+
+  /* .map__location */
+
+  &__location {
+    position: relative;
+    img:nth-child(1) {
+      height: 457px;
+      width: 100vw;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      top: 229px;
+      left: 288px;
+      z-index: 999;
+    }
+    img:nth-child(3) {
+      position: absolute;
+      top: 119px;
+      right: 459px;
+      z-index: 999;
+    }
+  }
+}
