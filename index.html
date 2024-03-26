@@ -84,31 +84,31 @@
             <div class="catalog__wrapper">
               <div
                 class="catalog__img"
-                style="background-image: url(/images/gallery/bg1.jpg)"
+                style="background-image: url(images/gallery/bg1.jpg)"
               >
                 <span class="catalog__title">Тоут</span>
               </div>
               <div
                 class="catalog__img"
-                style="background-image: url(/images/gallery/bg2.jpg)"
+                style="background-image: url(images/gallery/bg2.jpg)"
               >
                 <span class="catalog__title">Рюкзаки</span>
               </div>
               <div
                 class="catalog__img"
-                style="background-image: url(/images/gallery/bg3.jpg)"
+                style="background-image: url(images/gallery/bg3.jpg)"
               >
                 <span class="catalog__title">Поясные</span>
               </div>
               <div
                 class="catalog__img"
-                style="background-image: url(/images/gallery/bg4.jpg)"
+                style="background-image: url(images/gallery/bg4.jpg)"
               >
                 <span class="catalog__title">Роллтоп</span>
               </div>
               <div
                 class="catalog__img"
-                style="background-image: url(/images/gallery/bg5.jpg)"
+                style="background-image: url(images/gallery/bg5.jpg)"
               >
                 <span class="catalog__title">Кросс-боди</span>
               </div>
@@ -130,16 +130,14 @@
         <section class="video" id="brend">
           <div class="container">
             <div class="video__wrapper">
-              <div
-                class="video__player"
-                style="background-image: url(/images/video/video_bg.jpg)"
-              >
-                <a
+              <a class="video__player" href="video-a.mp4" data-fancybox="video">
+                <img src="images/video/video_bg.jpg" />
+                <div
                   class="video__play"
-                  href="https://www.youtube.com/watch?v=L3Dp4oGkn3k"
-                  style="background-image: url(/images/video/play.png)"
-                ></a>
-              </div>
+                  style="background-image: url(images/video/play.png)"
+                ></div>
+              </a>
+
               <div class="video__text">
                 <h3>Кто мы</h3>
                 <p>
@@ -340,16 +338,34 @@
             </div>
           </div>
 
-          <div class="gallery">
-            <h3>Наш Instagram</h3>
+          <div class="gallery container">
+            <h3 class="gallery__title">Наш Instagram</h3>
             <div class="gallery__box">
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
+              <a href="images/instagram/photo1.jpg" data-fancybox="gallery">
+                <img src="images/instagram/photo1.jpg" />
+              </a>
+              <a href="images/instagram/photo2.jpg" data-fancybox="gallery">
+                <img src="images/instagram/photo2.jpg" />
+              </a>
+              <a href="images/instagram/photo3.jpg" data-fancybox="gallery">
+                <img src="images/instagram/photo3.jpg" />
+              </a>
+              <a href="images/instagram/photo4.jpg" data-fancybox="gallery">
+                <img src="images/instagram/photo4.jpg" />
+              </a>
+              <a href="images/instagram/photo5.jpg" data-fancybox="gallery">
+                <img src="images/instagram/photo5.jpg" />
+              </a>
+              <a href="images/instagram/photo6.jpg" data-fancybox="gallery">
+                <img src="images/instagram/photo6.jpg" />
+              </a>
             </div>
+          </div>
+
+          <div class="map">
+            <h3 class="map__title container">
+              Купить Sputnik в <span>Нижнем Новгороде</span>
+            </h3>
           </div>
         </section>
       </main>

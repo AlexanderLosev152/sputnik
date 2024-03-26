@@ -1,0 +1,15 @@
+.gallery {
+  margin-bottom: 80px;
+
+  &__title {
+    padding-bottom: 30px;
+  }
+
+  /* .gallery__box */
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
