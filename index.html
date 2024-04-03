@@ -52,7 +52,7 @@
               <div class="slider slider-wrapper">
                 <div
                   class="slide"
-                  style="background-image: url('./images/slider/slide1.jpg')"
+                  style="background-image: url('images/slider/slide1.jpg')"
                 >
                   <h2 class="slide__title">Новый взгляд</h2>
                   <p>на привычные вещи</p>
@@ -60,7 +60,7 @@
                 </div>
                 <div
                   class="slide"
-                  style="background-image: url('./images/slider/slide2.jpg')"
+                  style="background-image: url('images/slider/slide2.jpg')"
                 >
                   <h2 class="slide__title">Желтый цвет</h2>
                   <p>всегда в моде</p>
@@ -68,7 +68,7 @@
                 </div>
                 <div
                   class="slide"
-                  style="background-image: url('./images/slider/slide3.jpg')"
+                  style="background-image: url('images/slider/slide3.jpg')"
                 >
                   <h2 class="slide__title">Скидки 25%</h2>
                   <p>на летнюю коллекцию</p>
@@ -81,38 +81,48 @@
 
         <section class="catalog" id="catalog">
           <div class="container">
-            <div class="catalog__wrapper">
-              <div
-                class="catalog__img"
+            <div class="catalog-wrapper">
+              <a
+                class="catalog-wrapper__img"
                 style="background-image: url(images/gallery/bg1.jpg)"
+                href="#"
               >
-                <span class="catalog__title">Тоут</span>
-              </div>
-              <div
-                class="catalog__img"
+                <span class="catalog-wrapper__title">Тоут</span>
+              </a>
+
+              <a
+                class="catalog-wrapper__img"
                 style="background-image: url(images/gallery/bg2.jpg)"
+                href="#"
               >
-                <span class="catalog__title">Рюкзаки</span>
-              </div>
-              <div
-                class="catalog__img"
+                <span class="catalog-wrapper__title">Рюкзаки</span>
+              </a>
+
+              <a
+                class="catalog-wrapper__img"
                 style="background-image: url(images/gallery/bg3.jpg)"
+                href="#"
               >
-                <span class="catalog__title">Поясные</span>
-              </div>
-              <div
-                class="catalog__img"
+                <span class="catalog-wrapper__title">Поясные</span>
+              </a>
+
+              <a
+                class="catalog-wrapper__img"
                 style="background-image: url(images/gallery/bg4.jpg)"
+                href="#"
               >
-                <span class="catalog__title">Роллтоп</span>
-              </div>
-              <div
-                class="catalog__img"
+                <span class="catalog-wrapper__title">Роллтоп</span>
+              </a>
+
+              <a
+                class="catalog-wrapper__img"
                 style="background-image: url(images/gallery/bg5.jpg)"
+                href="#"
               >
-                <span class="catalog__title">Кросс-боди</span>
-              </div>
-              <a class="catalog__link" href="#">
+                <span class="catalog-wrapper__title">Кросс-боди</span>
+              </a>
+
+              <a class="catalog-wrapper__link" href="#">
                 <span
                   >Смотреть<br />
                   всю коллекцию</span
@@ -366,10 +376,34 @@
             <h3 class="map__title container">
               Купить Sputnik в <span>Нижнем Новгороде</span>
             </h3>
-            <div class="map__location">
-              <img class="map" src="images/map.jpg" alt="map" loading="lazy" />
-              <img class="pin" src="images/pin.svg" alt="img" loading="lazy" />
-              <img class="pin" src="images/pin.svg" alt="img" loading="lazy" />
+            <div class="map-location">
+              <div class="map-grayscale">
+                <iframe
+                  class="map-location__map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d141707.91649843857!2d43.7613625589133!3d56.292098618879415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d5f9ee033251%3A0x28d3c0cf849657aa!2z0J3QuNC20L3QuNC5INCd0L7QstCz0L7RgNC-0LQsINCd0LjQttC10LPQvtGA0L7QtNGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1712134518376!5m2!1sru!2sru"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div class="map-location__pin">
+                <img
+                  class="map-location__pin"
+                  src="images/pin.svg"
+                  alt="img"
+                  loading="lazy"
+                />
+                <img
+                  class="map-location__pin"
+                  src="images/pin.svg"
+                  alt="img"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </section>
